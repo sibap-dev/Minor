@@ -1,0 +1,18 @@
+[
+    {
+        "scenario": "iid",
+        "strategy": "random",
+        "rounds": 2,
+        "num_select": 3,
+        "validation_accuracy": 0.7514401463222851,
+        "validation_balanced_accuracy": 0.4731626133442954,
+        "validation_macro_f1": 0.4749831256135308,
+        "test_accuracy": 0.7525182725166223,
+        "test_balanced_accuracy": 0.4739923856697003,
+        "test_macro_f1": 0.4769356390947601,
+        "test_weighted_f1": 0.7295462476350952,
+        "communication_megabytes_total": 0.713470458984375,
+        "cpu_seconds_total": 64.109375,
+        "training_seconds_total": 21.36972750001587
+    }
+]

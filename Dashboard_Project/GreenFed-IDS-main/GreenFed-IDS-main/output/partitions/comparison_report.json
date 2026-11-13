@@ -1,0 +1,72 @@
+{
+    "dataset": "CICIoT2023",
+    "training_records": 1170022,
+    "testing_records": 290874,
+    "features": 39,
+    "number_of_classes": 34,
+    "number_of_clients": 5,
+    "random_seed": 42,
+    "iid": {
+        "validation": true,
+        "clients": {
+            "client_1": {
+                "records": 234019,
+                "percentage": 20.0,
+                "classes": 34
+            },
+            "client_2": {
+                "records": 234012,
+                "percentage": 20.0,
+                "classes": 34
+            },
+            "client_3": {
+                "records": 234003,
+                "percentage": 20.0,
+                "classes": 34
+            },
+            "client_4": {
+                "records": 233997,
+                "percentage": 20.0,
+                "classes": 34
+            },
+            "client_5": {
+                "records": 233991,
+                "percentage": 20.0,
+                "classes": 34
+            }
+        }
+    },
+    "non_iid": {
+        "validation": true,
+        "dirichlet_alpha": 0.5,
+        "clients": {
+            "client_1": {
+                "records": 220029,
+                "percentage": 18.81,
+                "classes": 34
+            },
+            "client_2": {
+                "records": 232318,
+                "percentage": 19.86,
+                "classes": 32
+            },
+            "client_3": {
+                "records": 271630,
+                "percentage": 23.22,
+                "classes": 33
+            },
+            "client_4": {
+                "records": 325213,
+                "percentage": 27.8,
+                "classes": 32
+            },
+            "client_5": {
+                "records": 120832,
+                "percentage": 10.33,
+                "classes": 33
+            }
+        }
+    },
+    "test_set_used_for_partitioning": false,
+    "fedavg_code_modified": false
+}

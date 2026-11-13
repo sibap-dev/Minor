@@ -1,0 +1,18 @@
+[
+    {
+        "scenario": "non_iid",
+        "strategy": "resource",
+        "rounds": 2,
+        "num_select": 3,
+        "validation_accuracy": 0.7084066939026683,
+        "validation_balanced_accuracy": 0.44447196977295234,
+        "validation_macro_f1": 0.3917994385120615,
+        "test_accuracy": 0.7088292525285863,
+        "test_balanced_accuracy": 0.4430159222401159,
+        "test_macro_f1": 0.3918806917846239,
+        "test_weighted_f1": 0.6537229801881933,
+        "communication_megabytes_total": 0.713470458984375,
+        "cpu_seconds_total": 75.40625,
+        "training_seconds_total": 23.986659899994265
+    }
+]

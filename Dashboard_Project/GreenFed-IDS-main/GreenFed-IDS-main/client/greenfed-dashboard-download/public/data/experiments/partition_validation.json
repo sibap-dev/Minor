@@ -1,0 +1,50 @@
+{
+    "iid": {
+        "directory": "D:\\vs code\\Minor_Project\\GreenFed-IDS-main\\GreenFed-IDS-main\\output\\partitions\\iid",
+        "method": "iid",
+        "reported_seed": 42,
+        "reported_alpha": null,
+        "reported_clients": 5,
+        "validation": {
+            "total_training_records": 1170022,
+            "records_assigned": 1170022,
+            "unique_indices": 1170022,
+            "duplicate_indices_across_clients": 0,
+            "per_client_duplicates": {},
+            "indices_in_valid_range": true,
+            "all_records_assigned_once": true,
+            "empty_clients": [],
+            "test_split_used": false
+        },
+        "class_share_std_percentage_points": 0.1613,
+        "report_matches_recomputed_indices": true,
+        "report_mismatches": [],
+        "max_index_less_than_train_rows": true,
+        "test_rows_total": null,
+        "test_set_used_for_partitioning": false
+    },
+    "non_iid": {
+        "directory": "D:\\vs code\\Minor_Project\\GreenFed-IDS-main\\GreenFed-IDS-main\\output\\partitions\\non_iid",
+        "method": "non_iid",
+        "reported_seed": 42,
+        "reported_alpha": 0.5,
+        "reported_clients": 5,
+        "validation": {
+            "total_training_records": 1170022,
+            "records_assigned": 1170022,
+            "unique_indices": 1170022,
+            "duplicate_indices_across_clients": 0,
+            "per_client_duplicates": {},
+            "indices_in_valid_range": true,
+            "all_records_assigned_once": true,
+            "empty_clients": [],
+            "test_split_used": false
+        },
+        "class_share_std_percentage_points": 21.2734,
+        "report_matches_recomputed_indices": true,
+        "report_mismatches": [],
+        "max_index_less_than_train_rows": true,
+        "test_rows_total": null,
+        "test_set_used_for_partitioning": false
+    }
+}

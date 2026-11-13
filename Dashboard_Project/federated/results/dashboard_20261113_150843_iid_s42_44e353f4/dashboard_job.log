@@ -1,0 +1,30 @@
+Run directory: D:\vs code\Minor_Project\federated\results\dashboard_20261113_150843_iid_s42_44e353f4
+Loaded 5 partitions from D:\vs code\Minor_Project\GreenFed-IDS-main\GreenFed-IDS-main\output\partitions\iid (seed=42, alpha=None)
+Generated simulated context: D:\vs code\Minor_Project\federated\context\iid_context_seed42.json
+Using fixed dashboard selection: ['client_1', 'client_4', 'client_2'] (relaxed=False)
+Preparing federated data (training split only)...
+Clients: [210617, 210611, 210603, 210597, 210592] | validation rows: 117,002
+Loading held-out test split for final evaluation only...
+Test rows: 290,874
+
+============================================================
+Experiment: iid / context
+============================================================
+[round 1] strategy=context selected=['client_1', 'client_4', 'client_2'] relaxed=False
+    client_1: loss=0.6669 time=9.6s
+    client_4: loss=0.6658 time=3.7s
+    client_2: loss=0.6639 time=3.4s
+[round 2] strategy=context selected=['client_1', 'client_4', 'client_2'] relaxed=False
+    client_1: loss=0.5033 time=3.5s
+    client_4: loss=0.5022 time=3.6s
+    client_2: loss=0.5004 time=3.6s
+[final] evaluating held-out test set
+
+======================================================================
+SUMMARY (iid)
+======================================================================
+strategy   sel  val_acc  val_bf1  test_acc  test_bf1  comm_MB    cpu_s
+context      3   0.7515   0.4728    0.7523    0.4746     0.71    79.72
+
+Total wall time: 42.4s
+Results saved under D:\vs code\Minor_Project\federated\results\dashboard_20261113_150843_iid_s42_44e353f4

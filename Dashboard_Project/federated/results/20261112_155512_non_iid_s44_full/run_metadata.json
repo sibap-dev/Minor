@@ -1,0 +1,76 @@
+{
+    "run_id": "20261112_155512_non_iid_s44_full",
+    "created_at": "2026-11-12T15:55:17.987716+00:00",
+    "scenario": "non_iid",
+    "strategies": [
+        "all",
+        "random",
+        "resource",
+        "context"
+    ],
+    "partition_report": {
+        "directory": "D:\\vs code\\Minor_Project\\GreenFed-IDS-main\\GreenFed-IDS-main\\output\\partitions\\non_iid",
+        "random_seed": 42,
+        "dirichlet_alpha": 0.5,
+        "number_of_clients": 5
+    },
+    "context": {
+        "provenance": "simulated",
+        "seed": 42,
+        "generated_at": "2026-11-12T15:55:12.796144+00:00",
+        "note": "Resource and network values are simulated profiles for logical clients on shared hardware. They are not independent physical measurements. local_samples and class_coverage are derived from the real partition report."
+    },
+    "train_config": {
+        "rounds": 2,
+        "local_epochs": 1,
+        "batch_size": 256,
+        "learning_rate": 0.001,
+        "seed": 44,
+        "class_weight_mode": "none",
+        "num_threads": 4
+    },
+    "selection_config": {
+        "num_select": 3,
+        "weights": {
+            "resource": 0.3,
+            "network": 0.2,
+            "data": 0.25,
+            "fairness": 0.15,
+            "cost": 0.1
+        },
+        "eligibility": {
+            "min_availability": 0.5,
+            "max_cpu_percent": 95.0,
+            "min_memory_available_mb": 128.0,
+            "max_disk_percent": 98.0,
+            "max_latency_ms": 1000.0,
+            "max_packet_loss_percent": 50.0
+        }
+    },
+    "test_metadata": {
+        "test_rows": 290874,
+        "unknown_test_labels": {}
+    },
+    "command_line": {
+        "scenario": "non_iid",
+        "strategy": "all-strategies",
+        "rounds": 2,
+        "local_epochs": 1,
+        "batch_size": 256,
+        "lr": 0.001,
+        "seed": 44,
+        "num_select": 3,
+        "validation_fraction": 0.1,
+        "max_samples_per_client": null,
+        "class_weight_mode": "none",
+        "num_threads": 4,
+        "context_file": null,
+        "context_seed": 42,
+        "train_csv": "D:\\vs code\\Minor_Project\\output\\splits\\train.csv",
+        "test_csv": "D:\\vs code\\Minor_Project\\output\\splits\\test.csv",
+        "partitions_dir": "D:\\vs code\\Minor_Project\\GreenFed-IDS-main\\GreenFed-IDS-main\\output\\partitions",
+        "output_dir": "D:\\vs code\\Minor_Project\\federated\\results",
+        "tag": "full",
+        "no_test_eval": false
+    }
+}

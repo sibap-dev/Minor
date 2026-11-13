@@ -1,0 +1,3 @@
+strategy,scenario,round,selected_clients,constraints_relaxed,accuracy,balanced_accuracy,macro_f1,weighted_f1,communication_bytes_round,cpu_seconds_round,training_seconds_round,wall_seconds_round
+all,iid,1,client_1|client_2|client_3|client_4|client_5,False,0.7440300165809132,0.4360529243914512,0.43354765454090716,0.707639544106713,623440.0,18.046875,6.0992640999902505,6.235086400003638
+all,iid,2,client_1|client_2|client_3|client_4|client_5,False,0.750816225363669,0.4930515950812797,0.4899070681176192,0.7307174036725966,623440.0,19.421875,4.991010499987169,5.12670259999868

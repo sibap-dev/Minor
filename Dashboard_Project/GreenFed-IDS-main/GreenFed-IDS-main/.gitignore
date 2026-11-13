@@ -1,0 +1,7 @@
+**/node_modules/
+**/.env
+**/.env.*
+!**/.env.example
+simulator/.simulator-credentials.json
+**/dist/
+**/target/
